@@ -159,8 +159,8 @@ margin: 1px;
 }
 @media screen and (min-width:1440px){
   .container{
-    margin: 14em 0em 0em 40em;
-    width: 29%;
+    margin: 14em 0em 0em 28em;
+    width: 40%;
   }
   .botao{
     font-size: 20px;
