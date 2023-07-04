@@ -1,0 +1,208 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+:root{
+  --cor-de-fundo: hsl(30, 38%, 92%);
+  --branco:hsl(0, 0%, 100%);
+  --Azul-muito-escuro: hsl(212, 21%, 14%);
+  --Azul-acinzentado-escuro: hsl(228, 12%, 48%);
+  --cor-verde:#2E8B57;
+  --cor-do-hover:#006400;
+}
+body{
+  background: var(--cor-de-fundo);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+  }
+.container{
+   
+    margin: 3em;
+    background: var(--branco);
+    justify-content: center;
+    border-radius: 2%;
+    
+}
+.conteudo{
+padding: 10px;
+
+margin: 1px;
+}
+.texto{
+  align-items: center;
+  font-size: 11px;
+  font-family: sans-serif;
+  font-weight: 500; 
+  color: var(--Azul-acinzentado-escuro);
+  padding-top: 1em;
+ 
+}
+.imagem{
+  width: 100%; 
+  border-radius:2% 2% 0% 0%;
+}
+.preco-verde{
+  color: var(--cor-verde);
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 20px;
+  
+}
+.preco-cortado{
+  font-family: 'Fraunces', serif;
+  text-decoration:line-through;
+color: var(--Azul-acinzentado-escuro);
+padding: 5px;
+font-size: 10px;
+}
+.nome{
+  font-family: 'Fraunces', serif;
+font-size: 20px;
+padding-top:10px;
+}
+.pefume{
+  color: var(--Azul-acinzentado-escuro);
+  text-transform: uppercase;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 11px;
+   padding: 2px;
+  
+}
+.botao{
+  background-color: var(--cor-verde);
+  text-decoration: none;
+  color: var(--branco);
+ 
+margin-top: 1em;
+  justify-content: center;
+  display: flex;
+  font-size: 13px;
+  padding: 10px;
+  border-radius: 5.6%;
+align-items: center;
+
+}
+.botao:hover{
+  background: var(--cor-do-hover);
+}
+.precos{
+  padding-top: 1em;
+ align-items: center;
+  display: flex;
+margin: 1px;
+}
+.imagem__desktop{
+  display: none;
+}
+@media screen and (min-width:768px){
+  .imagem{
+    width: 100%;
+    display: none;
+  }
+  .imagem__desktop{
+    width: 60%;
+    display: block;
+    border-radius:2% 0% 0% 2%;
+  }
+  .container{
+  
+    display: flex;
+    align-items: center;
+    width: 40%;
+    margin: 6em 0em 0em 15em;
+  }
+  .conteudo{
+    margin-right: 20%;
+  }
+  .botao{
+    font-size: 10px;
+    padding: 0.5em;
+  }
+}
+@media screen and (min-width:1024px){
+ .container{
+  width: 50%;
+  box-sizing: border-box;
+  margin: 9em 0em 0em 15em;
+ }
+ .conteudo{
+  margin-right: 0;
+  padding-top: -5em;
+ 
+ }
+ .imagem__desktop{
+ width: 44%;
+  
+ }
+ 
+ .texto{
+  margin-top: 1em;
+  font-size: 14px;
+ }
+ .nome{
+  font-size: 30px;
+  margin-top: 0.5em;
+ }
+ .preco-verde{
+  font-size: 26px;
+ }
+ .precos{
+  margin-top: 1em;
+ }
+ .botao{
+  margin-top: 2em;
+  font-size: 12px;
+ }
+}
+@media screen and (min-width:1440px){
+  .container{
+    margin: 14em 0em 0em 40em;
+    width: 29%;
+  }
+  .botao{
+    font-size: 20px;
+    text-align: center;
+    
+  }
+  .imagem__desktop{
+    width: 50%;
+  }
+  .conteudo{
+    width: 50%;
+    
+  }
+  .botao{
+    margin-top: 2em;
+   }
+   .pefume{
+    margin-top: -30px;
+    font-size: 15px;
+   }
+}
+@media screen and (min-width:2560px){
+  .imagem__desktop{
+    width: 50%;
+  }
+  .container{
+    width: 25%;
+   margin: 27em 0em 0em 55em;
+  }
+  .pefume{
+    font-size: 20px;
+  }
+  .nome{
+    font-size: 37px;
+  }
+  .texto{
+    font-size: 16px;
+  }
+  .preco-cortado{
+    font-size: 15px;
+  }
+  .botao{
+    font-size: 23px;
+  }
+}
